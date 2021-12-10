@@ -1,0 +1,24 @@
+.SMALL {
+    --sds-c-button-brand-color-background: yellow;
+    --sds-c-button-brand-color-background-hover: olive;
+    --sds-c-button-brand-color-background-selected: yellow;
+}
+
+.MEDIUM {
+    --sds-c-button-brand-color-background: green;
+    --sds-c-button-brand-color-background-hover: darkgreen;
+    --sds-c-button-brand-color-background-selected: green;
+}
+
+.LARGE {
+    --sds-c-button-brand-color-background: blue;
+    --sds-c-button-brand-color-background-hover: darkblue;
+    --sds-c-button-brand-color-background-selected: blue;
+}
+
+.COMMUNITY {
+    --sds-c-button-brand-color-background: red;
+    --sds-c-button-brand-color-background-hover: darkred;
+    --sds-c-button-brand-color-background-selected: red;
+    
+}
