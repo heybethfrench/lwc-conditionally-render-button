@@ -1,33 +1,26 @@
-
     <template>
         <lightning-card>
             <div class="slds-align_absolute-center">
                 <lightning-button label="Get Accounts" variant="brand" class={buttonClassName} onclick={handleClick}></lightning-button>
             </div>
         </lightning-card>
-       
         <template if:true={clicked}>
-        <lightning-card>
-            
+            <lightning-card>
                 <template if:true={accList.data}>
-                    
                     <lightning-layout vertical-align="center" horizontal-align="space" multiple-rows="true">
-                    <template for:each={accList.data} for:item="account">
-                       
-                        <lightning-layout-item key={account.Id} padding="around-small" flexibility="auto">
-                            <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
-                                <li>Account Name: {account.Name}</li>
-                                <li>Phone: {account.Phone}</li>
-                            </div>
-                        </lightning-layout-item>
-                    </template>
-                </lightning-layout>
-                
+                        <template for:each={accList.data} for:item="account">
+                            <lightning-layout-item key={account.Id} padding="around-small" flexibility="auto">
+                                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+                                    <li>Account Name: {account.Name}</li>
+                                    <li>Phone: {account.Phone}</li>
+                                </div>
+                            </lightning-layout-item>
+                        </template>
+                    </lightning-layout>
                 </template>
                 <template if:true={accList.error}>
                     <p>{accList.error}></p>
                 </template>
-           
-        </lightning-card>
-    </template>
+            </lightning-card>
+        </template>
     </template>

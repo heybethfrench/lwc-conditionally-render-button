@@ -9,7 +9,6 @@ public without sharing class DeveloperTestApexController_Test {
             acc.Name = 'Test Account ' + i;
             testAccounts.add(acc);
         }
-
         insert testAccounts;
     }
     
@@ -46,9 +45,5 @@ public without sharing class DeveloperTestApexController_Test {
         }
 
         System.assert(exceptionCaught, 'Given getAccountList throws an exception, then the exception is handled');
-
-
     }
-
-
 }
